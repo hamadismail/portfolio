@@ -1,11 +1,95 @@
+/*########### IMPORT BASE CSS ###########*/
+@import url('base.css');
+
 /*=============== LAYOUT ===============*/
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 /*=============== SIDEBAR ===============*/
+.sidebar {
+  position: fixed;
+  width: 100px;
+  height: 100vh;
+  background-color: var(--clr-secondary);
+  border-right: 1px solid var(--clr-box);
+}
+
+.nav_logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1.8rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--clr-accent);
+  text-align: center;
+  margin: auto;
+}
+
+.nav_logo-text {
+  font-size: 1.125rem;
+  color: var(--clr-title);
+  font-weight: var(--font-bold);
+  line-height: 40px;
+}
+
+.nav_menu {
+  position: fixed;
+  transform: rotate(-90deg) translateX(-100%);
+  transform-origin: left top;
+  width: 100vh;
+}
+
+.menu {
+  display: flex;
+}
+
+.nav_list {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: -2px auto 0;
+  gap: 1rem;
+}
+
+.nav_link {
+  height: 100%;
+  line-height: 100px;
+  /* padding: 0 1rem; */
+  color: var(--clr-title);
+  font-weight: var(--font-medium);
+  position: relative;
+  transition: 0.4s;
+  float: right;
+}
+
+.btn_share {
+  position: absolute;
+  bottom: 1.8rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
 
 /* Active Link */
+.nav_link.active-link,
+.nav_link:hover {
+  color: var(--clr-accent);
+}
 
+.nav_link.active-link::after,
+.nav_link:hover::after {
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: var(--clr-accent);
+  border-radius: 50%;
+  bottom: 1.8rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 /*=============== MAIN ===============*/
 
 /*===== Home Section =====*/
@@ -29,7 +113,6 @@
 /* Active Modal*/
 
 /*===== Testimonial Section =====*/
-
 /* Swiper Class */
 
 /*===== Contact Section =====*/
