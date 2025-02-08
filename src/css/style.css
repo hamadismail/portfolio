@@ -1,18 +1,6 @@
 /*########### IMPORT BASE CSS ###########*/
 @import url('base.css');
 
-/*=============== LAYOUT ===============*/
-.container {
-  max-width: 1250px;
-  margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-}
-
-/*=============== REUSABLE CSS CLASSES ===============*/
-
 /*=============== SIDEBAR ===============*/
 .sidebar {
   position: fixed;
@@ -111,8 +99,6 @@
 .home_container {
   position: relative;
   height: 100%;
-  max-width: 95%;
-  margin: auto;
 }
 
 .home_img-banner {
@@ -236,6 +222,62 @@
 }
 
 /*===== About Section =====*/
+.about_container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: center;
+}
+
+.about_img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 8/9;
+  border-radius: 0.75rem;
+  justify-self: center;
+}
+
+.about_heading {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.about_description {
+  text-align: justify;
+  padding-right: 6rem;
+  margin-bottom: var(--mb-2);
+}
+
+.about_info {
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+  column-gap: 0.5rem;
+  margin-bottom: var(--mb-3);
+}
+
+.about_box {
+  text-align: center;
+  border-radius: 0.25rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--clr-box);
+}
+
+.about_icon {
+  margin-bottom: var(--mb-0-75);
+  /* background-color: var(--clr-accent); */
+  width: 28px;
+  height: 28px;
+  filter: invert(14%) sepia(94%) saturate(5105%) hue-rotate(330deg)
+    brightness(94%) contrast(107%);
+}
+
+.about_title {
+  font-size: var(--small-font-size);
+}
+
+.about_subtitle {
+  font-size: var(--smaller-font-size);
+}
 
 /*===== Qualification Section =====*/
 
