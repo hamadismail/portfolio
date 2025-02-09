@@ -280,7 +280,78 @@
 }
 
 /*===== Qualification Section =====*/
+.qualification_container {
+  grid-template-columns: repeat(2, 340px);
+  column-gap: 3rem;
+  justify-content: center;
+}
 
+.qualification_title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-2);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.timeline_item {
+  position: relative;
+  margin-bottom: var(--mb-2-5);
+  padding-left: 3rem;
+}
+
+.timeline_item::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 0.48rem;
+  top: 0;
+  background-color: var(--clr-accent);
+}
+
+.circle_dot {
+  content: '';
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--clr-accent);
+  border: 2px solid var(--clr-accent);
+  transition: 0.3s;
+}
+
+.timeline_item:hover .circle_dot {
+  background-color: var(--clr-secondary);
+}
+
+.timeline_title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-25);
+}
+
+.timeline_text {
+  font-size: var(--smaller-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.timeline_date {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--small-font-size);
+  color: var(--clr-accent);
+}
+
+.timeline_icon {
+  width: 20px;
+  margin-bottom: var(--mb-0-25);
+  fill: var(--clr-accent);
+}
 /*===== Skills Section =====*/
 
 /*===== Work Section =====*/
