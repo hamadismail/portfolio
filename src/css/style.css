@@ -1,5 +1,5 @@
 /*########### IMPORT BASE CSS ###########*/
-@import url('base.css');
+@import url("base.css");
 
 /*=============== SIDEBAR ===============*/
 .sidebar {
@@ -76,7 +76,7 @@
 .nav_link.active-link::after,
 .nav_link:hover::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 6px;
   height: 6px;
   background-color: var(--clr-accent);
@@ -135,7 +135,7 @@
   font-weight: var(--font-medium);
 }
 .home_social-follow::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 1rem;
   height: 2px;
@@ -205,7 +205,7 @@
 }
 .button::after {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   top: 0;
   width: 100%;
@@ -302,7 +302,7 @@
 }
 
 .timeline_item::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 1px;
   height: 100%;
@@ -312,7 +312,7 @@
 }
 
 .circle_dot {
-  content: '';
+  content: "";
   position: absolute;
   height: 1rem;
   width: 1rem;
@@ -352,7 +352,91 @@
   margin-bottom: var(--mb-0-25);
   fill: var(--clr-accent);
 }
+
 /*===== Skills Section =====*/
+.skills_container {
+  grid-template-columns: 360px 320px;
+  column-gap: 3rem;
+  justify-content: center;
+}
+
+.skills_header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.skills_header:not(:last-child) {
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills_icon,
+.skills_arrow {
+  filter: invert(14%) sepia(94%) saturate(5105%) hue-rotate(330deg)
+    brightness(94%) contrast(107%);
+
+  width: 30px;
+}
+
+.skills_icon {
+  margin-right: var(--mb-0-75);
+}
+
+.skills_title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills_subtitle {
+  font-size: var(--small-font-size);
+}
+
+.skills_arrow {
+  margin-left: auto;
+  transition: 0.3s;
+}
+
+.skills_active .skills_arrow {
+  transform: rotate(-90deg);
+}
+
+.skills [data-content] {
+  display: none;
+}
+
+.skills_active[data-content] {
+  display: block;
+}
+
+.skills_list {
+  row-gap: 1.8rem;
+}
+
+.skills_titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills_name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skills_bar,
+.skills_percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills_bar {
+  background-color: var(--clr-box);
+}
+
+.skills_percentage {
+  display: block;
+  background-color: var(--clr-accent);
+}
 
 /*===== Work Section =====*/
 
