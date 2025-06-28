@@ -44,7 +44,7 @@ const Contact = () => {
       </h2>
       <span className="block text-center text-gray-500 mb-12">Contact Me</span>
 
-      <div className="grid md:grid-cols-[max-content_max-content] justify-center gap-16 pb-12">
+      <div className="flex max-md:flex-col justify-center gap-16 pb-12">
         <div className="">
           <h3 className="text-xl font-semibold text-center mb-6 text-[#333]">
             Talk to me
@@ -84,14 +84,14 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className="max-w-full md:w-md">
           <h3 className="text-xl font-semibold text-center text-[#333] mb-6">
             What's the project?
           </h3>
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="w-[350px] max-w-full mx-auto space-y-6"
+            className="space-y-6"
           >
             <div className="relative h-16">
               <label className="absolute -top-2 left-5 text-sm bg-white text-[#333] font-semibold px-1 z-10">
