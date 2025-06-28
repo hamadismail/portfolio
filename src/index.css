@@ -1,7 +1,28 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
 
 @import "tailwindcss";
+
+:root {
+  --clr-accent: #9fbc49;
+  --clr-primary: #333333;
+}
+
+.accent-color {
+  color: var(--clr-accent);
+}
+
+.accent-bg {
+  background-color: var(--clr-accent);
+}
+
+.clr-primary {
+  color: var(--clr-primary);
+}
+
+.clr-primary-bg {
+  background-color: var(--clr-primary);
+}
 
 * {
   font-family: "Nunito", sans-serif;
