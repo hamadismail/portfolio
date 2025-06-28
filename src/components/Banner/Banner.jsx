@@ -31,7 +31,7 @@ const Banner = () => {
       </div>
 
       {/* Scroll Down */}
-      <div className="mt-20 ml-36 hidden md:block">
+      <div className="max-w-6xl mx-auto mt-20 hidden md:block">
         <Scroll />
       </div>
     </section>

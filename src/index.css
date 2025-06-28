@@ -8,20 +8,8 @@
   --clr-primary: #333333;
 }
 
-.accent-color {
-  color: var(--clr-accent);
-}
-
-.accent-bg {
-  background-color: var(--clr-accent);
-}
-
-.clr-primary {
-  color: var(--clr-primary);
-}
-
-.clr-primary-bg {
-  background-color: var(--clr-primary);
+html {
+  scroll-behavior: smooth;
 }
 
 * {
