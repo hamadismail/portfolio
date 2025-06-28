@@ -5,7 +5,7 @@ import Info from "./Info";
 const About = () => {
   return (
     <section id="about">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-1 text-[#333333]">
           About Me
         </h2>

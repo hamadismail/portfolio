@@ -7,7 +7,7 @@ import "./banner.css";
 
 const Banner = () => {
   return (
-    <section id="home" className="py-20 md:py-32 bg-white">
+    <section id="home" className="pt-20 md:pt-32 pb-16 bg-white">
       <div className="max-w-6xl relative mx-auto px-4 max-md:flex-col-reverse max-md:gap-8 flex justify-around items-center">
         {/* Social links */}
         <div className="absolute left-4 max-md:left-4 max-md:top-4 flex md:flex-col gap-4 justify-center">
