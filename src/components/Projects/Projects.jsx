@@ -43,7 +43,7 @@ const Projects = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid sm:grid-cols-2 justify-items-center max-w-3xl mx-auto gap-8">
+      <div className="flex flex-wrap justify-center max-w-3xl mx-auto gap-8">
         {projects.map((project) => (
           <ProjectItems key={project.id} item={project} />
         ))}
