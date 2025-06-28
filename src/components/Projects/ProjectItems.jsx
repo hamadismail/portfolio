@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import { GrPersonalComputer } from "react-icons/gr";
 import {
   HiOutlineArrowSmRight,
   HiOutlineCheckCircle,
@@ -30,21 +32,21 @@ const ProjectItems = ({ item }) => {
           Details <HiOutlineArrowSmRight className="text-lg" />
         </a>
 
-        <div className="flex gap-2 text-sm text-[#333]">
+        <div className="flex gap-2 text-sm text-[#333] items-center">
           <a
             href={item?.source}
             target="_blank"
-            className="cursor-pointer px-2 py-1 bg-[#333] text-white hover:bg-[#9fbc49] rounded"
+            className="cursor-pointer text-[#333] hover:text-[#9fbc49] rounded text-xl"
           >
-            View Source
+            <FaGithub />
           </a>
           {item.live && (
             <a
               href={item?.live}
               target="_blank"
-              className="cursor-pointer px-2 py-1 bg-[#333] text-white hover:bg-[#9fbc49] rounded"
+              className="cursor-pointer text-[#333] hover:text-[#9fbc49] rounded text-xl"
             >
-              Live
+              <GrPersonalComputer />
             </a>
           )}
         </div>

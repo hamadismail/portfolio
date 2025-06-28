@@ -100,6 +100,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
+                required
                 placeholder="Type your name"
                 className="w-full h-full border-2 border-gray-300 rounded-lg p-4 bg-transparent text-sm outline-none"
               />
@@ -112,6 +113,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
+                required
                 placeholder="Type your email"
                 className="w-full h-full border-2 border-gray-300 rounded-lg p-4 bg-transparent text-sm outline-none"
               />
@@ -124,6 +126,7 @@ const Contact = () => {
               <textarea
                 type="text"
                 name="message"
+                required
                 rows="6"
                 placeholder="Provide some project details..."
                 className="w-full h-full border-2 border-gray-300 rounded-lg p-4 bg-transparent text-sm resize-none outline-none"
@@ -136,7 +139,7 @@ const Contact = () => {
             >
               Send Message
               <svg
-                class=""
+                className=""
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"

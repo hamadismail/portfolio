@@ -34,7 +34,7 @@ const Info = () => {
 
         <p className="mb-4">
           Outside of coding, I enjoy{" "}
-          <span className="italic text-gray-600">sketching UI ideas</span>,
+          sketching UI ideas,
           exploring new tech tools, and occasionally diving into strategy games.
           I'm a calm, introverted thinker who values simplicity, creativity, and
           constant growth.
