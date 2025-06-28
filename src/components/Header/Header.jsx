@@ -29,7 +29,7 @@ const Header = () => {
       } md:bottom-auto md:top-0`}
     >
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-4 h-16">
-        <a href="/" className="text-lg font-semibold text-gray-800">
+        <a href="/" className="text-xl font-bold text-[#333333]">
           Portfolio
         </a>
 
