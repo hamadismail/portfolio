@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="max-6xl mx-auto py-16 px-4" id="contact">
+    <section className="max-w-6xl mx-auto py-16 px-4" id="contact">
       <h2 className="text-3xl font-bold text-[#333] text-center mb-2">
         Let's Connect
       </h2>
@@ -91,7 +91,7 @@ const Contact = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="w-[360px] max-w-full mx-auto space-y-6"
+            className="w-[350px] max-w-full mx-auto space-y-6"
           >
             <div className="relative h-16">
               <label className="absolute -top-2 left-5 text-sm bg-white text-[#333] font-semibold px-1 z-10">
@@ -101,7 +101,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 placeholder="Type your name"
-                className="absolute w-full h-full border-2 border-gray-300 rounded-lg p-4 bg-transparent text-sm outline-none"
+                className="w-full h-full border-2 border-gray-300 rounded-lg p-4 bg-transparent text-sm outline-none"
               />
             </div>
 
@@ -113,7 +113,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 placeholder="Type your email"
-                className="absolute w-full h-full border-2 border-gray-300 rounded-lg p-4 bg-transparent text-sm outline-none"
+                className="w-full h-full border-2 border-gray-300 rounded-lg p-4 bg-transparent text-sm outline-none"
               />
             </div>
 
@@ -126,7 +126,7 @@ const Contact = () => {
                 name="message"
                 rows="6"
                 placeholder="Provide some project details..."
-                className="absolute w-full h-full border-2 border-gray-300 rounded-lg p-4 bg-transparent text-sm resize-none outline-none"
+                className="w-full h-full border-2 border-gray-300 rounded-lg p-4 bg-transparent text-sm resize-none outline-none"
               ></textarea>
             </div>
 

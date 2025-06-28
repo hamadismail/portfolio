@@ -1,6 +1,7 @@
 import About from "./components/About/About";
 import Banner from "./components/Banner/Banner";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Portfolio from "./components/Projects/Portfolio";
 import Publications from "./components/Publications/Publications";
@@ -19,6 +20,7 @@ function App() {
       <Portfolio />
       <Publications />
       <Contact />
+      <Footer />
       <ScrollUp />
     </>
   );
