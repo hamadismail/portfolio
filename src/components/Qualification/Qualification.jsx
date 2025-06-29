@@ -14,12 +14,15 @@ const Qualification = () => {
 
   return (
     <section id="qualification" className="py-16 max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold text-center text-[#333333] mb-2">
-        Qualification
-      </h2>
-      <span className="block text-center text-sm text-gray-500 mb-10">
-        My Journey
-      </span>
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">
+          Qualification
+        </h2>
+        <div className="w-20 h-1 bg-[#9fbc49] mx-auto mb-4"></div>
+        <p className="text-sm uppercase tracking-wider text-gray-500">
+          My Journey
+        </p>
+      </div>
 
       <div className="max-w-md mx-auto px-4">
         {/* Tabs */}
@@ -56,7 +59,9 @@ const Qualification = () => {
               {/* Item 1 */}
               <div className="grid grid-cols-[1fr_max-content_1fr] gap-x-6 items-center">
                 <div>
-                  <h3 className="text-base font-medium text-[#333]">B.Sc in Computer Science and Engineering</h3>
+                  <h3 className="text-base font-medium text-[#333]">
+                    B.Sc in Computer Science and Engineering
+                  </h3>
                   <span className="block text-sm text-gray-500 mb-1">
                     Green University of Bangladesh
                   </span>

@@ -1,9 +1,12 @@
+import { FaReact } from "react-icons/fa";
 import Project1 from "../../assets/project_1.png";
 import Project2 from "../../assets/project_2.png";
 import Project3 from "../../assets/project_3.png";
 import Project4 from "../../assets/project_4.png";
-
-
+import { IoLogoJavascript } from "react-icons/io";
+import { SiExpress, SiMongodb, SiMongoose, SiTypescript } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 export const projectsData = [
   {
@@ -24,6 +27,14 @@ export const projectsData = [
         "Responsive design using Tailwind CSS",
       ],
     },
+    tech: [
+      <FaReact color="#2b7fff" />,
+      <RiTailwindCssFill color="#00b8db" />,
+      <IoLogoJavascript color="#f0b100" />,
+      <IoLogoFirebase color="#ff6900" />,
+      <SiExpress color="#101828" />,
+      <SiMongodb color="#00c950" />,
+    ],
     live: "https://readora1.web.app/",
     source: "https://github.com/hamadismail/library-management-client",
   },
@@ -43,6 +54,14 @@ export const projectsData = [
         "Responsive design using Tailwind CSS",
       ],
     },
+    tech: [
+      <FaReact color="#2b7fff" />,
+      <RiTailwindCssFill color="#00b8db" />,
+      <IoLogoJavascript color="#f0b100" />,
+      <IoLogoFirebase color="#ff6900" />,
+      <SiExpress color="#101828" />,
+      <SiMongodb color="#00c950" />,
+    ],
     live: "https://hobbyhubss.web.app/",
     source: "https://github.com/hamadismail/hobby-hubs-client",
   },
@@ -62,13 +81,19 @@ export const projectsData = [
         "Responsive design using Tailwind CSS",
       ],
     },
+    tech: [
+      <FaReact color="#2b7fff" />,
+      <RiTailwindCssFill color="#00b8db" />,
+      <IoLogoJavascript color="#f0b100" />,
+      <IoLogoFirebase color="#ff6900" />,
+    ],
     live: "https://eventnest2.web.app/",
     source: "https://github.com/hamadismail/event-nest",
   },
   {
     id: 4,
     image: Project4,
-    title: "Library Management API",
+    title: "Library Management",
     category: "Backend",
     details: {
       title: "Library Management API",
@@ -80,6 +105,12 @@ export const projectsData = [
         "Retrieve borrow summaries using MongoDB aggregation",
       ],
     },
+    tech: [
+      <SiExpress color="#101828" />,
+      <SiMongodb color="#00c950" />,
+      <SiMongoose color="#880000" />,
+      <SiTypescript color="#3178C6"/>,
+    ],
     live: null,
     source: "https://github.com/hamadismail/library-management-b5a3",
   },

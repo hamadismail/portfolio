@@ -24,7 +24,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="pt-12">
+    <div>
       {/* Filter Tabs */}
       <div className="flex justify-center items-center gap-3 mb-10 flex-wrap">
         {projectsNav.map((navItem, index) => (

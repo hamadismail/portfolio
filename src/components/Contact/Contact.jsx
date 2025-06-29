@@ -39,10 +39,15 @@ const Contact = () => {
 
   return (
     <section className="max-w-6xl mx-auto py-16 px-4" id="contact">
-      <h2 className="text-3xl font-bold text-[#333] text-center mb-2">
-        Let's Connect
-      </h2>
-      <span className="block text-center text-gray-500 mb-12">Contact Me</span>
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">
+          Let's Connect
+        </h2>
+        <div className="w-20 h-1 bg-[#9fbc49] mx-auto mb-4"></div>
+        <p className="text-sm uppercase tracking-wider text-gray-500">
+          Contact Me
+        </p>
+      </div>
 
       <div className="flex max-md:flex-col justify-center gap-16 pb-12">
         <div className="">
@@ -88,11 +93,7 @@ const Contact = () => {
           <h3 className="text-xl font-semibold text-center text-[#333] mb-6">
             What's the project?
           </h3>
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            className="space-y-6"
-          >
+          <form ref={form} onSubmit={sendEmail} className="space-y-6">
             <div className="relative h-16">
               <label className="absolute -top-2 left-5 text-sm bg-white text-[#333] font-semibold px-1 z-10">
                 Name

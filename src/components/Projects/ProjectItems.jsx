@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { FaGithub } from "react-icons/fa";
-import { GrPersonalComputer } from "react-icons/gr";
+import { FaGithub, FaReact } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import {
   HiOutlineArrowSmRight,
   HiOutlineCheckCircle,
   HiX,
 } from "react-icons/hi";
+import { IoLogoJavascript } from "react-icons/io";
 
 const ProjectItems = ({ item }) => {
   const [toggleState, setToggleState] = useState(0);
@@ -23,7 +24,15 @@ const ProjectItems = ({ item }) => {
           className="object-cover w-full h-full transform transition-transform duration-300 group-hover:scale-150"
         />
       </div>
-      <h3 className="text-lg text-[#333] font-semibold my-2">{item.title}</h3>
+      <div className="flex items-center justify-between">
+        <h3 className="text-lg text-[#333] font-semibold my-2">{item.title}</h3>
+
+        <div className="flex items-center gap-2">
+          {item?.tech?.map((t, idx) => (
+            <span key={idx}>{t}</span>
+          ))}
+        </div>
+      </div>
       <div className="flex justify-between">
         <a
           onClick={() => toggleTab(1)}
@@ -46,7 +55,7 @@ const ProjectItems = ({ item }) => {
               target="_blank"
               className="cursor-pointer text-[#333] hover:text-[#9fbc49] rounded text-xl"
             >
-              <GrPersonalComputer />
+              <FiExternalLink />
             </a>
           )}
         </div>
